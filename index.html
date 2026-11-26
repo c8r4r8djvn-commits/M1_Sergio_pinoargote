@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-<body>
-    
+<body>                                       <!-- Aquí va todo lo que SÍ se ve -->
+    <header>
+        <h1>Colorfly</h1>
+        <p>Genera paletas de colores al instante para tus propuestas de marca.</p>
+    </header>
+    <main>                                 <!-- El contenido principal de la página -->
+        <form id="controles">           <!-- Caja con los controles; el id es su "DNI" para encontrarla con JS -->                 
+            <label for="cantidad">Cantidad de colores</label> <!-- Texto del menú; su "for" tiene que ser igual al "id" del select -->
+            <select id="cantidad" name="cantidad">              <!-- Menú desplegable para elegir cuántos colores -->
+                <option value="6" selected>6 colores</option>    <!-- value = lo que lee JS; selected = elegida al abrir -->
+                <option value="8">8 colores</option>
+                <option value="9">9 colores</option>
+            </select>
+            <label for="formato">Formato del código</label>
+            <select id="formato" name="formato">
+                <option value="hex" selected>HEX</option>
+                <option value="hsl">HSL</option>
+            </select>
+            <button type="submit">Generar paleta</button>
+        </form>
+    </main>
 </body>
 </html>
