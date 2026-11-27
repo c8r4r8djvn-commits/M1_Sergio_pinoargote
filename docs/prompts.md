@@ -11,3 +11,4 @@
 **Lo que pedí:** Que me explicara qué significaba lo que salió en `git status`.
 **Para qué:** Saber por qué Git decía que README.md estaba "deleted".
 **Qué aprendí:** Que "untracked" son archivos que Git todavía no vigila, y que mover un archivo Git lo ve como borrarlo de un lugar y crearlo en otro.
+
